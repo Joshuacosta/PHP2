@@ -47,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void btnAcceptarOnClick(View view){
+    public void btnAcceptarOnClick(View view) {
 
         /*
 
@@ -98,7 +98,7 @@ public class MainActivity extends ActionBarActivity {
             }
 
             @Override
-            public void onFinish(){
+            public void onFinish() {
 
             }
         });
@@ -119,6 +119,8 @@ public class MainActivity extends ActionBarActivity {
                 Log.i("Hola", "Ok " + responseString);
             }
         });
+
+
            /*
            AsyncHttpResponseHandler() {
             @Override
