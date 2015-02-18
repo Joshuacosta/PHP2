@@ -97,6 +97,27 @@ public class MainActivity extends ActionBarActivity {
                 Log.i("Hola", "Ok " + responseString);
             }
 
+            @Override
+            public void onFinish(){
+
+            }
+        });
+
+        // Cridant a una classe estatica
+
+        RequestParams params2 = new RequestParams();
+        params2.put("usuari", "james");
+        params2.put("email", "123456");
+        php.post("prova.php", params2, new TextHttpResponseHandler() {
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                Log.i("Hola", "Error");
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, String responseString) {
+                Log.i("Hola", "Ok " + responseString);
+            }
         });
            /*
            AsyncHttpResponseHandler() {
